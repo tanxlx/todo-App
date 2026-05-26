@@ -1,0 +1,128 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #0d1117;
+    color: #c9d1d9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    background: #161b22;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 450px;
+    border: 1px solid #30363d;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #58a6ff;
+}
+
+.input-area {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+.todo-input {
+    flex: 1;
+    background: #21262d;
+    border: 1px solid #30363d;
+    padding: 12px;
+    color: white;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+}
+
+.todo-input:focus {
+    border-color: #58a6ff;
+}
+
+.add-btn {
+    background: #238636;
+    color: white;
+    border: none;
+    padding: 0 16px;
+    border-radius: 6px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.add-btn:hover {
+    background: #2ea043;
+}
+
+.todo-list {
+    list-style: none;
+}
+
+.todo-list li {
+    background: #21262d;
+    border: 1px solid #30363d;
+    padding: 12px;
+    margin-bottom: 10px;
+    border-radius: 6px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.delete-btn {
+    background: none;
+    border: none;
+    color: #f85149;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.error-message {
+    color: #f85149;
+    font-size: 14px;
+    margin-bottom: 10px;
+    display: none;
+}
+.project-footer {
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #30363d;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 13px;
+    color: #8b949e;
+}
+
+.footer-left strong {
+    color: #58a6ff; /* Aapke naam ko blue highlight milega */
+}
+
+.status-dot {
+    height: 8px;
+    width: 8px;
+    background-color: #238636; /* Green Color */
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 5px;
+    box-shadow: 0 0 8px #238636; /* Glowing Effect */
+}
+
+.status-text {
+    font-size: 12px;
+    font-weight: 500;
+    color: #31a14c;
+}
